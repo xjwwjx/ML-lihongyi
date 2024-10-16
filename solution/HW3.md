@@ -4,7 +4,7 @@
 
 ### Easy 
 直接跑给的源代码既可以达到要求。
-
+![alt text](image-6.png)
 ### Medium
 1. 增加epochs的次数。
 2. 需要做一个数据增强。具体就是在载入数据的时候给每个图片生成不同的版本，增强泛化性。具体实现如下：
@@ -14,8 +14,8 @@
 3. 学习率从0.0003调整为0.0001
 
 **private**: 0.715  
-
 **public**: 0.745
+![alt text](image-7.png)
 
 ### Hard
 1. 使用多种变换方法，增强图片的多样性。
@@ -31,7 +31,17 @@
     5) 训练模型真的非常耗时，30h都验证不了几次想法。
 
 **private**: 0.803  
-
 **public**: 0.820
+![alt text](image-8.png)
+
+4. 使用TTA(Test Time Augmentation)，可以过双StrongLine
+![alt text](image-10.png)
+5. 使用ResNet，加深网络深度且不容易过拟合
+![alt text](image-11.png)
+
+**private**: 0.827
+**public**: 0.822
+
+![alt text](image-9.png)
 
 ### Boss
